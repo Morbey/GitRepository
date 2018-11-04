@@ -5,7 +5,10 @@
   angular.module('myFirstApp', [])
 
   //Controller bind to index.html div where it has ng-controller="MyFirstController"
-  .controller('MyFirstController', function() {
-
+  .controller('MyFirstController', function($scope) { // $ is reserved for angular variables
+    $scope.name = "Morbey";
+    $scope.sayHello = function () {
+      return "Hello Coursera!";
+    }
   });
 })();
