@@ -12,4 +12,10 @@
       $scope.name = upCase($scope.name);
     };
   }
+
+  function AnnotateMe(name, job, blah) {
+    return "Blah";
+  }
+
+  console.log(AnnotateMe);
 })();
